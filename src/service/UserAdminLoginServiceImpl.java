@@ -64,7 +64,7 @@ public class UserAdminLoginServiceImpl implements UserAdminLoginService {
 				mov.userAdminLogin();
 				break;
 			}
-			
+			break;
 		}while(menu != "0");
 	}
 	

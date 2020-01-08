@@ -98,11 +98,11 @@ public class ReservationServiceImpl implements ReservationService{
 		     
 		     boolean reservCheck = reservDao.reservCheck(roomId, fristday, lastday);				//예약체크
 		     if(!reservCheck){
-		    	 System.out.println("예약실패 다시");
+		    	 System.out.println("\t예약실패 다시");
 		    	 }
 		     else if(reservCheck == true){																//예약체크에 따른 예약성공실패
 		    	 moongu1();
-		    	 System.out.println("예약이 가능 하십니다.");
+		    	 System.out.println("\t예약이 가능 하십니다.");
 		    	 String requestText =request();														//요청사항
 		    	 String paymethod = makePayment(roomId, count);
 //		    	 System.out.println(count);
@@ -158,7 +158,6 @@ public class ReservationServiceImpl implements ReservationService{
 	
 	@Override
 	public String makePayment(int roomid, int staydate) {
-
 		String paymentMethod = "";
 		int price = reservDao.getRoomPrice(roomid);
 		double prices = (double)price*staydate;
@@ -195,20 +194,22 @@ public class ReservationServiceImpl implements ReservationService{
 			
 			if(ans == 1){paymentMethod = "현금";
 			moongu1();
-			System.out.println("\t결제가 완료되었습니다. 감사합니다.");}
+			System.out.println("\t예약이 완료되었습니다. 감사합니다.");}
 			moongu1();
 			if(ans == 2){paymentMethod = "계좌이체";
 			moongu1();
-			System.out.println("\t결제가 완료되었습니다. 감사합니다.");}
+			System.out.println("\t(우리은행) - 박종민 / 1002-947-022202 로 입금 부탁드리겠습니다.");
+			System.out.println("\t예약이 완료되었습니다. 감사합니다.");}
 			moongu1();
 			if(ans == 3){paymentMethod = "카드";
 			moongu1();
-			System.out.println("\t결제가 완료되었습니다. 감사합니다.");}
+			System.out.println("\t예약이 완료되었습니다. 감사합니다.");}
 			moongu1();
 			if(ans == 4){break;}
 			
+			break;
 		}return paymentMethod;
-		
+
 		}while(true);
 		
 		return paymentMethod;
@@ -241,7 +242,7 @@ public class ReservationServiceImpl implements ReservationService{
 			moongu2();
 			System.out.println("\t\t\t\t ☆ 예약 취소 선택 페이지 입니다 ☆ ");
 			moongu1();
-			System.out.println("\t예약리스트에서 취소하실 예약번호를 선택해주세요(ex.예약1번)");
+			System.out.println("\t예약리스트에서 취소하실 예약번호를 선택해주세요(ex.예약[1]번) \n\t예제를 참고하여 대괄호 안의 숫자만 입력하시면됩니다.");
 			moongu1();
 			System.out.println("\t유저 화면으로 돌아가시려면 0을 눌러주세요");
 			moongu2();
@@ -271,7 +272,7 @@ public class ReservationServiceImpl implements ReservationService{
 			moongu2();
 			System.out.println("\t\t\t\t ☆ 리뷰 작성 페이지 입니다 ☆");
 			moongu1();
-			System.out.println("\t리뷰를 작성하시려는 예약을 선택해주세요(ex.예약1번)");
+			System.out.println("\t리뷰를 작성하시려는 예약을 선택해주세요 \n\t(ex.예약[1]번) '예제를 참고하여 대괄호 안의 숫자만 입력해주세요.'");
 			moongu1();
 			System.out.println("\t유저 화면으로 돌아가시려면 0을 눌러주세요");
 			moongu2();
@@ -290,7 +291,7 @@ public class ReservationServiceImpl implements ReservationService{
 				int reservid = reserv.get(ans-1).getReservationId();
 				reserv.get(ans-1).setStatus(4);
 				moongu1();
-				System.out.println("\t\t\t\t리뷰를 작성하실수 없습니다.");
+//				System.out.println("\t\t\t\t리뷰를 작성하실수 없습니다.");
 				moongu1();
 				new ReviewController().before(userid, reservid);
 				break;
@@ -328,11 +329,11 @@ public class ReservationServiceImpl implements ReservationService{
 				}
 				
 				System.out.println(i + 1 +"\t"+ reList.getUserId()
-									 + "\t  "
+									 + "  "
 									 + reList.getReservationId()
-									 + "\t   "
+									 + "   "
 									 + reList.getRoomId() + "호실"
-									 + "\t "
+									 + " "
 									 + getDateByInteger(reList.getCheckin())
 									 + " ~ " 
 									 + getDateByInteger(reList.getCheckout())
@@ -349,7 +350,7 @@ public class ReservationServiceImpl implements ReservationService{
 									 	
 			}
 			moongu1();
-			System.out.println("이전화면으로 돌아가시려면 '이전'을 입력해주세요.");
+			System.out.println("\t이전화면으로 돌아가시려면 '이전'을 입력해주세요.");
 			moongu2();
 			menu = s.nextLine();
 			Controller mov = new Controller();
@@ -360,7 +361,7 @@ public class ReservationServiceImpl implements ReservationService{
 					mov.userAdminLogin();
 					break;
 				}
-				
+				break;
 			}while(menu != "0");
 	
 		

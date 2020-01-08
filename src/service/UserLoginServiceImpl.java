@@ -9,6 +9,7 @@ import vo.UserVO;
 import controller.Controller;
 import dao.UserLoginDao;
 import dao.UserLoginDaoImpl;
+import data.Session;
 
 public class UserLoginServiceImpl implements UserLoginService {
 
@@ -64,24 +65,33 @@ public class UserLoginServiceImpl implements UserLoginService {
 		
 		Controller usermy = new Controller();
 		String menu;
-		moongu2();
-		System.out.println("\t\t\t\t☆ 계정 정보 확인 및 변경 화면 입니다 ☆");
-		moongu1();
-		System.out.println("\t\t 아이디\t   이름\t   비밀번호\t          핸드폰번호\t           이메일 \t\t  등급");
-		moongu1();
 		for(int i = userList.size() - 1; 0 <= i; i--){
 			UserVO user = userList.get(i);
+			if(!Session.getLoginUser().getId().equals(idinput) && !Session.getLoginUser().getId().equals(passinput)){
+				moongu2();
+				System.out.println("\t\t\t\t☆ 계정 정보 확인 및 변경 화면 입니다 ☆");
+				moongu1();
+				System.out.println("\t로그인 계정과 수정하시려는 계정정보가 일치하지 않습니다.");
+				moongu1();
+				System.out.println("이전화면으로 돌아기시려면 '이전'을 입력하세요.");
+				moongu2();
+				break;}
 			if(user.getId().equals(idinput) && user.getPassword().equals(passinput)){
+				moongu2();
+				System.out.println("\t\t\t\t☆ 계정 정보 확인 및 변경 화면 입니다 ☆");
+				moongu1();
+				System.out.println("\t\t 아이디\t   이름\t   비밀번호\t          핸드폰번호\t           이메일 \t\t  등급");
+				moongu1();
 				System.out.println("\t\t" + user.getId() + "\t " + user.getName()+ "\t" + "*******" + "  " + user.getPhone().substring(0, 3) + "-" + user.getPhone().substring(3,  7) + "-" + user.getPhone().substring(7) + "   " + user.getEmail() + "\t" + user.getGrade());
-			}
+				moongu1();
+				System.out.println("\t1. 비밀번호 변경하러 가기");
+				System.out.println("\t2. 핸드폰 번호 변경하러 가기");
+				System.out.println("\t3. 이메일 변경하러 가기");
+				moongu1();
+				System.out.println("이전화면으로 돌아기시려면 '이전'을 입력하세요.");
+				moongu2();
+			} 
 		}
-		moongu1();
-		System.out.println("\t1. 비밀번호 변경하러 가기");
-		System.out.println("\t2. 핸드폰 번호 변경하러 가기");
-		System.out.println("\t3. 이메일 변경하러 가기");
-		moongu1();
-		System.out.println("이전화면으로 돌아기시려면 '이전'을 입력하세요.");
-		moongu2();
 		UserLoginServiceImpl usermove = new UserLoginServiceImpl();
 		
 		do{

@@ -56,7 +56,7 @@ public class ReviewDaoImpl implements ReviewDao {
 		ArrayList<ReviewVO> tmp =  new ArrayList<>();
 		
 		for(int i = 0; i < database.tb_review.size(); i++){
-			if(database.tb_review.get(i).getUserId() == userid){
+			if(database.tb_review.get(i).getUserId().equals(userid)){
 				tmp.add(database.tb_review.get(i));
 			}
 		}

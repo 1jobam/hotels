@@ -32,9 +32,9 @@ public class ReviewController {
 			
 			boolean checknull = reviewserviceimpl.checkReviewNull(userid, roomid);
 			if(!checknull){
-				System.out.println("해당 객실에 관해 이미 작성하신 리뷰가 있습니다.");
-				System.out.println("리뷰보기 페이지에서 리뷰를 관리하실 수 있습니다.");
-				System.out.println("이전 화면으로 돌아갑니다.");
+				System.out.println("\t해당 객실에 관해 이미 작성하신 리뷰가 있습니다.");
+				System.out.println("\t리뷰보기 페이지에서 리뷰를 관리하실 수 있습니다.");
+				System.out.println("\t이전 화면으로 돌아갑니다.");
 				break;
 			}	
 			

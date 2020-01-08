@@ -209,12 +209,12 @@ public class HotelServiceImpl implements HotelService {
 				 HotelName(i);
 			}
 		}
-		
 		if(input.equals("이전화면")){
 			break;
 		} else {
 			getInfo(id);
 		}
+		break;
 		}while(true);
 	}
 	@Override
@@ -261,7 +261,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
-
+			break;
 		}
 		if (input.equals("호텔그레이톤둔산")) {
 			int hotelId = 3;
@@ -273,6 +273,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 
 		if (input.equals("롯데호텔월드")) {
@@ -285,6 +286,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		if (input.equals("서울신라호텔")) {
 			int hotelId = 12;
@@ -296,6 +298,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		if (input.equals("그랜드하얏트서울")) {
 			int hotelId = 13;
@@ -307,6 +310,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		
 		if (input.equals("네스트호텔")) {
@@ -319,6 +323,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		if (input.equals("송도센트럴파크호텔")) {
 			int hotelId = 22;
@@ -330,6 +335,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		if (input.equals("파라다이스시티")) {
 			int hotelId = 23;
@@ -341,6 +347,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		
 		if (input.equals("홀리데이인광주호텔")) {
@@ -353,6 +360,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		if (input.equals("라마다프라자광주호텔")) {
 			int hotelId = 32;
@@ -364,6 +372,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		if (input.equals("마드리드비지니스호텔")) {
 			int hotelId = 33;
@@ -375,6 +384,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		
 		if (input.equals("호텔인터불고엑스코")) {
@@ -387,6 +397,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		if (input.equals("리버틴호텔")) {
 			int hotelId = 42;
@@ -398,6 +409,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		if (input.equals("엘디스리젠트호텔")) {
 			int hotelId = 43;
@@ -409,6 +421,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		
 		if (input.equals("롯데호텔울산")) {
@@ -421,6 +434,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		if (input.equals("호텔현대바이라한울산")) {
 			int hotelId = 52;
@@ -432,6 +446,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		if (input.equals("머큐어앰배서더울산")) {
 			int hotelId = 53;
@@ -443,6 +458,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		
 		if (input.equals("신라스테이해운대")) {
@@ -455,6 +471,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		if (input.equals("센텀프리미어호텔")) {
 			int hotelId = 62;
@@ -466,6 +483,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		if (input.equals("파라다이스호텔부산")) {
 			int hotelId = 63;
@@ -477,6 +495,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		
 		if (input.equals("라마다앙코르서귀포호텔")) {
@@ -489,6 +508,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		if (input.equals("유탑유블레스호텔")) {
 			int hotelId = 72;
@@ -500,6 +520,7 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		if (input.equals("제주신라호텔")) {
 			int hotelId = 73;
@@ -511,11 +532,13 @@ public class HotelServiceImpl implements HotelService {
 				HotelInfo(i);
 			}
 			room.roomMain(hotelId, id);
+			break;
 		}
 		
 		if(input.equals("이전화면")){
 			break;
 		}
+		break;
 		}while(true);
 		
 	}
@@ -570,6 +593,7 @@ public class HotelServiceImpl implements HotelService {
 		
 		hotelDao.insertlocal(local);
 		hoteladd(inarray, inarray2);
+
 		}
 	}		
 

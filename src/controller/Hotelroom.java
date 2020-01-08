@@ -45,7 +45,7 @@ HotelServiceImpl roomService = HotelServiceImpl.getInstance();
 			roomService.getRoom(a);//객실을 보여준다
 			
 			moongu1();
-			System.out.println("\t머물고 싶은 객실번호를 입력해주세요");
+			System.out.println("\t머물고 싶은 객실[번호]를 입력해주세요 \n\tex)객실번호:[1]호실 \n\t예제를 참고하여 대괄호 안의 숫자만 입력하여주세요.");
 			moongu1();
 			System.out.println("\t지역 선택 화면으로 돌아가시려면 0을 눌러주세요.");
 			moongu2();

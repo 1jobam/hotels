@@ -1,13 +1,17 @@
 package service;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import controller.Controller;
+import vo.ReservationVO;
 import vo.UserAdminLoginVO;
 import vo.UserVO;
+import dao.ReservationDAO;
+import dao.ReservationDAOImpl;
 import dao.UserDao;
 import dao.UserDaoImpl;
 import dao.UserLoginDao;
@@ -52,7 +56,7 @@ public class UserServiceImpl implements UserService { //클래스를 생성할�
 		//회원가입
 		
 		moongu2();
-		System.out.println("\t\t\t\t☆ 회원가입을 진행 페이지 1) ☆");
+		System.out.println("\t\t\t\t☆ 회원가입 진행 페이지 1) ☆");
 		moongu1();
 		System.out.println("\t이름 : ");
 		System.out.println("\tex) 홍길동");
@@ -61,7 +65,7 @@ public class UserServiceImpl implements UserService { //클래스를 생성할�
 		
 		String name = s.nextLine();
 		
-		String regName = "^[가-힣]*$";
+		String regName = "^[가-힣]{2,4}$";
 		Pattern regexName = Pattern.compile(regName);
 		Matcher matcherName = regexName.matcher(name);
 		
@@ -74,7 +78,7 @@ public class UserServiceImpl implements UserService { //클래스를 생성할�
 		}
 		
 		moongu2();
-		System.out.println("\t\t\t\t☆ 회원가입을 진행 페이지 2) ☆");
+		System.out.println("\t\t\t\t☆ 회원가입 진행 페이지 2) ☆");
 		moongu1();
 		System.out.println("\t아이디 : ");
 		System.out.println("\tex) test1234");
@@ -96,7 +100,7 @@ public class UserServiceImpl implements UserService { //클래스를 생성할�
 		}
 		
 		moongu2();
-		System.out.println("\t\t\t\t☆ 회원가입을 진행 페이지 3) ☆");
+		System.out.println("\t\t\t\t☆ 회원가입 진행 페이지 3) ☆");
 		moongu1();
 		System.out.println("\t비밀번호 : ");
 		System.out.println("\tex) test123!@#");
@@ -120,7 +124,7 @@ public class UserServiceImpl implements UserService { //클래스를 생성할�
 		}
 		
 		moongu2();
-		System.out.println("\t\t\t\t☆ 회원가입을 진행 페이지 4) ☆");
+		System.out.println("\t\t\t\t☆ 회원가입 진행 페이지 4) ☆");
 		moongu1();
 		System.out.println("\t전화번호 : ");
 		System.out.println("\tex) 01012341234");
@@ -142,7 +146,7 @@ public class UserServiceImpl implements UserService { //클래스를 생성할�
 		}
 		
 		moongu2();
-		System.out.println("\t\t\t\t☆ 회원가입을 진행 페이지 5) ☆");
+		System.out.println("\t\t\t\t☆ 회원가입 진행 페이지 5) ☆");
 		moongu1();
 		System.out.println("\t이메일 : ");
 		System.out.println("\tex) test123@naver.com");
@@ -268,6 +272,81 @@ public class UserServiceImpl implements UserService { //클래스를 생성할�
 			as.userAdminLogin();
 		}
 		
+	}
+	
+	ReservationDAO reservDao = ReservationDAOImpl.getInstance();
+
+	@Override
+	public void selectres() {
+		String input;
+		
+		Controller as = new Controller();
+		
+		do{
+			moongu2();
+			System.out.println("\t\t\t\t ☆ 비회원 예약조회 페이지 입니다 ☆");
+			moongu1();
+			System.out.println("\t예약 번호를 입력하여 주세요.");
+			moongu1();
+			System.out.println("\t이전화면으로 돌아가시려면 '이전'");
+			moongu1();
+			moongu2();
+			input = s.nextLine();
+
+			if(input.equals("이전")){
+				as.begin();
+				break;
+			}else if(!input.equals("이전")){
+				selectreserv(input);
+			}
+		}while(input != "0");
+	}
+
+	@Override
+	public void selectreserv(String input) {
+		Scanner s = new Scanner(System.in);
+		String menu;
+		String status;
+		
+		String trace = input;
+		int number = Integer.parseInt(input);
+		
+		moongu2();
+		System.out.println("\t\t\t\t ☆ 비회원 예약조회 페이지☆");
+		moongu1();
+		System.out.println("   아이디\t\t예약번호\t\t\t객실아이디\t\t  예약기간\t\t  예약상태");
+		moongu1();
+			for(int i =reservDao.selectReserv().size() -1; 0<= i; i--){
+				ReservationVO reList =reservDao.selectReserv().get(i);
+				
+				if(reList.getStatus() == 1){
+					status = "예약대기";
+				}else if(reList.getStatus() == 2){
+					status = "예약취소";
+				}else if(reList.getStatus() == 3){
+					status = "리뷰작성대기";
+				}else{
+					status = "리뷰작성완료";
+				}
+				
+				if(number == reList.getReservationId()){
+				System.out.println(" "+ reList.getUserId() + "\t\t" + reList.getReservationId() + "\t\t\t" + reList.getRoomId() + "호실" + "\t\t" +"(" + (reList.getCount()-1) +"박" + reList.getCount() +"일" +")" + "\t\t  "+ status );
+				}
+									 	
+			}
+			moongu1();
+			System.out.println("\t이전화면으로 돌아가시려면 '이전'을 입력해주세요.");
+			moongu2();
+			menu = s.nextLine();
+			do{
+				
+				switch(menu){
+				case "이전" :
+					new Controller().begin();
+					break;
+				}
+				break;
+			}while(menu != "0");
 	}
 
 }

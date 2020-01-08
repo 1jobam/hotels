@@ -31,6 +31,515 @@ public class Controller {
 		
 	}
 	
+	public void stop() {
+
+		for(int i =0; i <100; i++){
+			System.out.print("▒");
+		}
+		System.out.println();
+		for(int i =0; i <57; i++){
+		if(i==2){
+			System.out.print("●●●●●●●");
+		}
+		if(i==3){
+			System.out.print("●▒▒▒●");
+		}
+		if(i==8){
+			System.out.print("●");
+		}
+		if(i==13){
+			System.out.print("●●");
+		}
+		if(i==17){
+			System.out.print("●");
+		}
+		if(i==18){
+			System.out.print("●▒▒●");
+		}
+		if(i==25){
+			System.out.print("●▒▒▒●");
+		}
+		if(i==28){
+			System.out.print("●●●");
+		}
+		if(i==31){
+			System.out.print("●▒▒▒▒●");
+		}
+		if(i==34){
+			System.out.print("●●");
+		}
+		if(i==49){
+			System.out.print("●●");
+		}
+		if(i==51){
+			System.out.print("●▒▒▒●");
+		}
+		
+		
+		System.out.print("▒");
+		}
+		System.out.println();
+		for(int i =0; i <52; i++){
+			if(i==5){
+				System.out.print("●");
+			}
+			if(i==9){
+				System.out.print("●▒▒▒●");
+			}
+			if(i==13){
+				System.out.print("●▒●");
+			}
+			if(i==17){
+				System.out.print("●▒●");
+			}
+			if(i==20){
+				System.out.print("●");
+			}
+			if(i==21){
+				System.out.print("●▒●");
+			}
+			if(i==30){
+				System.out.print("●▒●");
+			}
+			if(i==33){
+				System.out.print("●▒▒▒●");
+			}
+			if(i==35){
+				System.out.print("●▒▒▒▒●");
+			}
+			if(i==37){
+				System.out.print("●▒▒●");
+			}
+			if(i==40){
+				System.out.print("●●▒▒▒▒●");
+			}
+			if(i==43){
+				System.out.print("●▒▒●");
+			}
+			if(i==45){
+				System.out.print("●▒●");
+			}
+		
+		
+		
+		
+		System.out.print("▒");	
+		}
+		System.out.println();
+		for(int i =0; i <53; i++){
+			if(i==5){
+				System.out.print("●");
+			}
+			if(i==9){
+				System.out.print("●●●●●");
+			}
+			if(i==12){
+				System.out.print("●●●●●");
+			}
+			if(i==15){
+				System.out.print("●▒▒●");
+			}
+			if(i==17){
+				System.out.print("●");
+			}
+			if(i==18){
+				System.out.print("●●");
+			}
+			if(i==29){
+				System.out.print("●");
+			}
+			if(i==32){
+				System.out.print("●▒▒▒▒▒●");
+			}
+			if(i==33){
+				System.out.print("●▒▒▒▒●");
+			}
+			if(i==35){
+				System.out.print("●▒▒●");
+			}
+			if(i==37){
+				System.out.print("●▒▒●▒▒●");
+			}
+			if(i==41){
+				System.out.print("●▒●");
+			}
+			if(i==45){
+				System.out.print("●");
+			}
+		System.out.print("▒");	
+		}
+		System.out.println();
+		for(int i =0; i <52; i++){
+			if(i==5){
+				System.out.print("●");
+			}
+			if(i==9){
+				System.out.print("●▒▒▒●");
+			}
+			if(i==11){
+				System.out.print("●▒▒▒▒▒●");
+			}
+			if(i==13){
+				System.out.print("●▒▒▒●");
+			}
+			if(i==14){
+				System.out.print("●");
+			}
+			if(i==15){
+				System.out.print("●▒●");
+			}
+			if(i==25){
+				System.out.print("●");
+			}
+			if(i==29){
+				System.out.print("●▒▒▒●");
+			}
+			if(i==31){
+				System.out.print("●▒▒▒▒●");
+			}
+			if(i==34){
+				System.out.print("●●");
+			}
+			if(i==36){
+				System.out.print("●▒▒▒▒●●");
+			}
+			if(i==41){
+				System.out.print("●▒▒●");
+			}
+			if(i==44){
+				System.out.print("●");
+			}
+			
+		System.out.print("▒");	
+		}
+		System.out.println();
+		for(int i =0; i <61; i++){
+			if(i==5){
+				System.out.print("●");
+			}
+			if(i==9){
+				System.out.print("●▒▒▒●");
+			}
+			if(i==10){
+				System.out.print("●▒▒▒▒▒▒▒●");
+			}
+			if(i==11){
+				System.out.print("●▒▒▒▒●●");
+			}
+			if(i==12){
+				System.out.print("●▒▒●");
+			}
+			if(i==21){
+				System.out.print("●");
+			}
+			if(i==26){
+				System.out.print("●●●");
+			}
+			if(i==30){
+				System.out.print("●●●●");
+			}
+			if(i==34){
+				System.out.print("●●");
+			}
+			if(i==49){
+				System.out.print("●●");
+			}
+			if(i==53){
+				System.out.print("●");
+			}
+		System.out.print("▒");	
+		}
+		System.out.println();
+		for(int i =0; i <100; i++){
+			
+		System.out.print("▒");	
+		}
+		System.out.println();
+
+	for(int i = 0; i < 100; i++){
+		System.out.print("-");
+	}
+	System.out.println();
+}
+	
+	public void rogo(){
+		for(int i =0; i <100; i++){
+			System.out.print("▒");
+		}
+		System.out.println();
+		for(int i =0; i <73; i++){
+			System.out.print("▒");
+			if(i ==7){
+				System.out.print("●");
+			}
+			if(i ==9){
+				System.out.print("●");
+			}
+			if(i ==12){
+				System.out.print("●●");
+			}
+			if(i ==15){
+				System.out.print("●●●●●");
+			}
+			if(i ==16){
+				System.out.print("●●●●●");
+			}
+			if(i ==17){
+				System.out.print("●");
+			}
+			if(i ==29){
+				System.out.print("●");
+			}
+			if(i ==34){
+				System.out.print("●");
+			}
+			if(i ==38){
+				System.out.print("●●");
+			}
+			if(i ==40){
+				System.out.print("●");
+			}
+			if(i ==45){
+				System.out.print("●");
+			}
+			if(i ==46){
+				System.out.print("●");
+			}
+			if(i ==47){
+				System.out.print("●●●●●");
+			}
+			
+			
+			
+		}
+		System.out.println();
+		for(int i =0; i <79; i++){
+			System.out.print("▒");
+			if(i ==7){
+				System.out.print("●");
+			}
+			if(i ==9){
+				System.out.print("●");
+			}
+			if(i ==11){
+				System.out.print("●");
+			}
+			if(i ==13){
+				System.out.print("●");
+			}
+			if(i ==17){
+				System.out.print("●");
+			}
+			if(i ==20){
+				System.out.print("●");
+			}
+			if(i ==25){
+				System.out.print("●");
+			}
+			if(i ==31){
+				System.out.print("●");
+			}
+			if(i ==34){
+				System.out.print("●");
+			}
+			if(i ==35){
+				System.out.print("●");
+			}
+			if(i ==37){
+				System.out.print("●");
+			}
+			if(i ==39){
+				System.out.print("●●");
+			}
+			if(i ==41){
+				System.out.print("●●●●");
+			}
+			if(i ==42){
+				System.out.print("●");
+			}
+			if(i ==46){
+				System.out.print("●");
+			}
+			if(i ==48){
+				System.out.print("●");
+			}
+			if(i ==51){
+				System.out.print("●");
+			}
+			
+			
+			
+		}
+		System.out.println();
+		for(int i =0; i <66; i++){
+			System.out.print("▒");
+			if(i ==7){
+				System.out.print("●●●●▒●");
+			}
+			if(i ==11){
+				System.out.print("●");
+			}
+			if(i ==14){
+				System.out.print("●");
+			}
+			if(i ==17){
+				System.out.print("●●●●●");
+			}
+			if(i ==18){
+				System.out.print("●");
+			}
+			if(i ==23){
+				System.out.print("●");
+			}
+			if(i ==24){
+				System.out.print("●");
+			}
+			if(i ==25){
+				System.out.print("●●");
+			}
+			if(i ==26){
+				System.out.print("●");
+			}
+			if(i ==27){
+				System.out.print("●▒●");
+			}
+			if(i ==28){
+				System.out.print("●●");
+			}
+			if(i ==31){
+				System.out.print("●●");
+			}
+			if(i ==33){
+				System.out.print("●●");
+			}
+			if(i ==35){
+				System.out.print("●●");
+			}
+			if(i ==37){
+				System.out.print("●");
+			}
+			if(i ==39){
+				System.out.print("●▒●");
+			}
+		}
+		System.out.println();
+		for(int i =0; i <72; i++){
+			System.out.print("▒");
+			if(i ==7){
+				System.out.print("●");
+			}
+			if(i ==9){
+				System.out.print("●");
+			}
+			if(i ==11){
+				System.out.print("●");
+			}
+			if(i ==13){
+				System.out.print("●");
+			}
+			if(i ==17){
+				System.out.print("●");
+			}
+			if(i ==20){
+				System.out.print("●");
+			}
+			if(i ==25){
+				System.out.print("●");
+			}
+			if(i ==31){
+				System.out.print("●");
+			}
+			if(i ==33){
+				System.out.print("●●");
+			}
+			if(i ==34){
+				System.out.print("●");
+			}
+			if(i ==36){
+				System.out.print("●");
+			}
+			if(i ==38){
+				System.out.print("●");
+			}
+			if(i ==41){
+				System.out.print("●▒▒●");
+			}
+			if(i ==42){
+				System.out.print("●");
+			}
+			if(i ==44){
+				System.out.print("●▒▒●");
+			}
+			if(i ==45){
+				System.out.print("●");
+			}
+			if(i ==46){
+				System.out.print("●▒▒▒●");
+			}
+			
+			
+		}
+		System.out.println();
+		for(int i =0; i <72; i++){
+			System.out.print("▒");
+			if(i ==7){
+				System.out.print("●");
+			}
+			if(i ==9){
+				System.out.print("●");
+			}
+			if(i ==12){
+				System.out.print("●●");
+			}
+			if(i ==17){
+				System.out.print("●");
+			}
+			if(i ==20){
+				System.out.print("●●●●●");
+			}
+			if(i ==21){
+				System.out.print("●●●●●");
+			}
+			if(i ==27){
+				System.out.print("●");
+			}
+			if(i ==28){
+				System.out.print("●");
+			}
+			if(i ==30){
+				System.out.print("●●●●");
+			}
+			if(i ==34){
+				System.out.print("●●");
+			}
+			if(i ==36){
+				System.out.print("●");
+			}
+			if(i ==43){
+				System.out.print("●");
+			}
+			if(i ==45){
+				System.out.print("●▒●");
+			}
+
+		}
+		System.out.println();
+		for(int i =0; i <94; i++){
+			System.out.print("▒");
+			if(i ==50){
+				System.out.print("●");
+			}
+			if(i ==68){
+				System.out.print("●●●●●");
+			}
+		}
+		System.out.println();
+		for(int i = 0; i < 100; i++){
+			System.out.print("-");
+		}	
+		System.out.println();
+	}
+	
 	public void moongu1(){ // 내용선
 		for(int i = 0; i < 100; i++){
 			System.out.print("-");
@@ -51,6 +560,7 @@ public class Controller {
 		
 		do{
 			arrow();
+			rogo();
 			moongu2();
 			System.out.println("\t\t\t\t☆ 호텔 예약 시스템에 오신것을 환영합니다 ☆");
 			moongu1();
@@ -71,17 +581,17 @@ public class Controller {
 				break;
 			case "종료" :
 				moongu2();
-				moongu1();
 				System.out.println("\t\t\t\t☆ 호텔 예약시스템을 이용해주셔서 감사합니다. ☆");
 				moongu1();
+				stop();
 				moongu2();
 				System.exit(0);
 				break;
 			case "0" :
 				moongu2();
-				moongu1();
 				System.out.println("\t\t\t\t☆ 호텔 예약시스템을 이용해주셔서 감사합니다. ☆");
 				moongu1();
+				stop();
 				moongu2();
 				System.exit(0);
 				break;
@@ -153,6 +663,14 @@ public class Controller {
 	}
 	
 	public void arrow(){	
+		for(int i = 0; i < 100; i++){
+			System.out.print("*");
+		}
+		System.out.println();
+		for(int i = 0; i < 100; i++){
+			System.out.print("-");
+		}
+		System.out.println();
 		System.out.println("\t\t\t\t\t\t▦▦");
 			System.out.println("\t\t\t\t\t\t▦▦");
 			System.out.println("\t\t\t\t\t\t▦▦");
@@ -231,6 +749,7 @@ public class Controller {
 			moongu1();
 			System.out.println("\t1). \t회원가입");
 			System.out.println("\t2). \t로그인");
+			System.out.println("\t3). \t비회원 예약조회");
 			System.out.println("\t0). \t프로그램종료");
 			moongu1();
 			System.out.println("\t메뉴에 해당하는 번호 입력>");
@@ -245,12 +764,45 @@ public class Controller {
 			case 2 : //로그인
 				beginLogin();
 				break;
+			case 3 : //비회원 예약조회
+				selectres();
+				break;
 			case 0 : //프로그램 종료
-				System.out.println("프로그램 종료");
+				moongu2();
+				System.out.println("\t\t\t\t☆ 호텔 예약시스템을 이용해주셔서 감사합니다. ☆");
+				moongu1();
+				stop();
+				moongu2();
 				System.exit(0);
 				break;
 			}
 		}while(menu != 0);
+	}
+	
+	public void selectres(){ //비회원 예약조회
+		int menu;
+		do{
+			moongu2();
+			System.out.println("\t\t\t\t ☆ 비회원 예약조회 페이지 입니다 ☆");
+			moongu1();
+			System.out.println("\t1). \t비회원 예약조회");
+			System.out.println("\t2). \t이전화면으로 이동하기");
+			moongu1();
+			System.out.println("\t메뉴에 해당하는 번호 입력>");
+			moongu2();
+			
+			menu = Integer.parseInt(s.nextLine());
+			
+			switch (menu) {
+			case 1: //회원가입
+				userService.selectres();
+				break;
+			case 2 : //로그인
+				begin();
+				break;
+			}
+		}while(menu != 0);
+		
 	}
 	
 	
@@ -376,9 +928,9 @@ public class Controller {
 				userLogin(userid);
 				break;
 			}
-			
+			break;
 		}while(menu != 0);
-		
+
 	}
 	
 	public void localMove(String id){

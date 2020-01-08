@@ -50,6 +50,13 @@ public class Database { //기본적은 데이터를 입력
 		user.setEmail("test123@test.com");
 		user.setGrade("일반등급");
 		tb_user.add(user);
+		user.setName("민태홍");
+		user.setId("asd123");
+		user.setPassword("asd123!@#");
+		user.setPhone("01074786160");
+		user.setEmail("co5o@naver.com");
+		user.setGrade("일반등급");
+		tb_user.add(user);
 	}
 	
 	//관리자 로그인 정보
@@ -846,7 +853,7 @@ public ArrayList <HotelVO> tb_local = new ArrayList<>();
 	public ArrayList<ReservationVO> userReservationlist = new ArrayList<>();
 	{
 		ReservationVO userReservList = new ReservationVO();
-		userReservList.setUserId("admin");
+		userReservList.setUserId("asd123");
 		userReservList.setCheckin(conv(20191223));
 		userReservList.setCheckout(conv(20200102));
 		userReservList.setPaymethod("현금");
@@ -861,7 +868,7 @@ public ArrayList <HotelVO> tb_local = new ArrayList<>();
 	
 	{
 		ReservationVO userReservList = new ReservationVO();
-		userReservList.setUserId("admin");
+		userReservList.setUserId("asd123");
 		userReservList.setCheckin(conv(20191225));
 		userReservList.setCheckout(conv(20191226));
 		userReservList.setPaymethod("현금");
@@ -876,7 +883,7 @@ public ArrayList <HotelVO> tb_local = new ArrayList<>();
 	
 	{
 		ReservationVO userReservList = new ReservationVO();
-		userReservList.setUserId("admin");
+		userReservList.setUserId("asd123");
 		userReservList.setCheckin(conv(20200101));
 		userReservList.setCheckout(conv(20200106));
 		userReservList.setPaymethod("현금");
@@ -891,7 +898,7 @@ public ArrayList <HotelVO> tb_local = new ArrayList<>();
 	
 	{
 		ReservationVO userReservList = new ReservationVO();
-		userReservList.setUserId("admin");
+		userReservList.setUserId("asd123");
 		userReservList.setCheckin(conv(20191227));
 		userReservList.setCheckout(conv(20191231));
 		userReservList.setPaymethod("현금");

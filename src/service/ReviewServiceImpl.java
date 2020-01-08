@@ -171,8 +171,8 @@ public class ReviewServiceImpl implements ReviewService {
 		Scanner sc = new Scanner(System.in);
 		modify = sc.nextLine();
 		
-		if(modify == "이전"){}
-		else if(modify != "이전" || modify != ""){ reviewDao.reviewModify(reviewId, modify);}
+		if(modify.equals("이전")){}
+		else if(!modify.equals("이전") || modify.equals("")){ reviewDao.reviewModify(reviewId, modify);}
 		
 	}
 

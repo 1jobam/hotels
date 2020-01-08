@@ -15,7 +15,7 @@ import data.Session;
 public class ReservationDAOImpl implements ReservationDAO {
 	//--------------------------------------------------------//
 	private static ReservationDAOImpl instance;				//싱클톤
-	public static Calendar cal = Calendar.getInstance();
+	public Calendar cal = Calendar.getInstance();
 	
 	private ReservationDAOImpl(){}
 	
@@ -48,7 +48,7 @@ public class ReservationDAOImpl implements ReservationDAO {
 	
 	
 	
-public static String printdt(Date date){
+	public String printdt(Date date){
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		
@@ -207,6 +207,7 @@ public static String printdt(Date date){
 			System.out.println("\t결제방식 : "+rvo.getPaymethod()+"\t");
 			System.out.println("\t요청사항 : "+rvo.getRequest()+"\t");
 			System.out.println("\t예약상태 : "+status);
+			System.out.println("\t예약번호 : "+rvo.getReservationId());
 			System.out.println();
 			
 		}
@@ -257,6 +258,11 @@ public static String printdt(Date date){
 				database.userReservationlist.get(i).setStatus(2);
 			}
 		}
+	}
+
+	@Override
+	public ArrayList<ReservationVO> selectReserv() {
+		return database.userReservationlist;
 	}
 
 }

@@ -26,6 +26,8 @@ public interface ReservationDAO {
 	
 	public void resVOprint (ReservationVO rvo);
 	
+	public ArrayList<ReservationVO> selectReserv();
+	
 	
 
 }
